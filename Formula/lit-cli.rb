@@ -6,7 +6,7 @@
 #   brew uninstall lit
 #   brew untap toadle/lit
 
-class Lit < Formula
+class LitCli < Formula
   version 'v0.1.0-alpha'
   desc "lit - an easily configurable quicklauncher for the commandline"
   homepage "https://github.com/toadle/lit"
