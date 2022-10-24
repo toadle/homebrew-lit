@@ -1,14 +1,14 @@
 # To install:
 #   brew tap toadle/lit
-#   brew install lit
+#   brew install lit-cli
 #
 # To remove:
 #   brew uninstall lit
 #   brew untap toadle/lit
 
-class LitCli < Formula
+class Lit < Formula
   version 'v0.1.0-alpha'
-  desc "lit - a command-line based quick-launcher"
+  desc "lit - an easily configurable quicklauncher for the commandline"
   homepage "https://github.com/toadle/lit"
 
   if OS.mac? && Hardware::CPU.intel?
@@ -21,8 +21,6 @@ class LitCli < Formula
     url "https://github.com/cantino/mcfly/releases/download/#{version}/lit-v0.1-amd64-darwin.tar.gz"
     sha256 "ad4bd165cc008f45daf8c47e66d9d9f1b32eb67adb4a64abe0d2868f46c017d1"
   end
-
-  conflicts_with "lit", because: "lit also ships a binary named 'lit'"
 
   def install
     bin.install "lit"
