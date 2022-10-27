@@ -7,19 +7,19 @@
 #   brew untap toadle/lit
 
 class LitCli < Formula
-  version 'v0.1.0-alpha'
+  version 'v0.1.1'
   desc "lit - an easily configurable quicklauncher for the commandline"
   homepage "https://github.com/toadle/lit"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/toadle/lit/releases/download/#{version}/lit-v0.1-amd64-darwin.tar.gz"
-    sha256 "b1f006e80ebd91bdc57f55f033363898d444b6fc8a8474a4932dbc8a88378c55"
+    url "https://github.com/toadle/lit/releases/download/v0.1.1/lit_0.1.1_darwin_amd64.tar.gz"
+    sha256 "14e55d5fc35894af7a9b3e36844b842817f6c013c48d67b4abd00a71234f2dc2"
   elsif  OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/toadle/lit/releases/download/#{version}/lit-v0.1-arm64-darwin.tar.gz"
-    sha256 "3a862fee7e508819cc9fa22f4f8fb21fe1f6cb89d5e6405772f3086fefbeca5c"
+    url "https://github.com/toadle/lit/releases/download/v0.1.1/lit_0.1.1_darwin_arm64.tar.gz"
+    sha256 "4bbda56144a92cca0d6ebbcb76eeb9e76a259d165102dc2ddb7e9bc8667ab762"
   elsif OS.linux?
-    url "https://github.com/cantino/mcfly/releases/download/#{version}/lit-v0.1-amd64-darwin.tar.gz"
-    sha256 "ad4bd165cc008f45daf8c47e66d9d9f1b32eb67adb4a64abe0d2868f46c017d1"
+    url "https://github.com/toadle/lit/releases/download/v0.1.1/lit_0.1.1_linux_amd64.tar.gz"
+    sha256 "ae30c7b7612a97ddfca14975c7d63049280ffada8243ee349ca3c77e7b78d2ac"
   end
 
   def install
